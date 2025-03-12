@@ -1,10 +1,9 @@
 export const Links = [
-    'DEVELOPERS',
-    'BUILDERS',
-    'TOOLS',
-    'ENTERPRISE',
-    'APPLICATION',
-    'COMMUNITY',
-    'SOCIALS',
-    'ABOUT'
+    'Home',
+    'Staking',
+    'Eco-friendly mining',
+    'How to Buy',
+    'About BCE',
+    'Blog',
+    'EN',
 ]

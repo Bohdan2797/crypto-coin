@@ -11,22 +11,16 @@
   font-style: normal;
 }
 body {
-  background-color: rgb(44, 44, 44);
+  background-color: #4B5265;
   font-family: Unbounded;
   color: #ddddce;
   margin: 0;
   padding: 0;
 }
-@keyframes gradient-shift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 
