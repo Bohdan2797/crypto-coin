@@ -9,7 +9,7 @@ export function Navbar() {
         <Image src="/logo.png" alt="logo" width={50} height={50} />
         <ul className="flex gap-x-4"> 
           {Links.map((link, index) => (
-            <li key={index} className="px-3 py-2 border-1  border-transparent hover:border-[#2E727A] transform-border transition-colors duration-300 rounded-2xl"> 
+            <li key={index} className="px-3 py-2 border-1  border-transparent hover:border-[#495878] transform-border transition-colors duration-300 rounded-2xl"> 
               <Link href="#">{link}</Link>
             </li>
           ))}

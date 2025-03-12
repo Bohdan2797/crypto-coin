@@ -1,12 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Code:wght@300..700&family=Space+Grotesk:wght@300..700&family=Unbounded:wght@200..900&display=swap');
 
 @import "tailwindcss";
+@theme {
+  --font-exo:  "Exo 2"; 
+}
 
-
+.exo-2 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 body {
   background-color: rgb(44, 44, 44);
   font-family: Unbounded;
   color: #ddddce;
   margin: 0;
   padding: 0;
+}
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@keyframes moveAndBlink {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translate(200px, 150px) scale(1.2);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-100px, 300px) scale(0.8);
+    opacity: 1;
+  }
+  75% {
+    transform: translate(300px, -100px) scale(1.1);
+    opacity: 0.5;
+  }
+}
+
+.animate-moveAndBlink {
+  animation: moveAndBlink 10s infinite ease-in-out;
 }
