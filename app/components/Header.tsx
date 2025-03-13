@@ -10,9 +10,9 @@ export function Header() {
                 <div className="flex flex-col">
                     <h2 className="flex flex-col text-7xl gap-y-2 font-bold">
                         <span>BaseCore : </span>
-                        <span className="font-exo text-9xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#01fb37] to-[#001affaa] relative inline-block 
+                        <span className="font-exo text-9xl w-3/4  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#01fb37] to-[#001affaa] relative inline-block 
                         bg-[length:200%_200%] animate-[gradient-move_5s_infinite]">
-                        Secure, Scalable, Effortlessly Advanced
+                        Secure, Scalable, For Everyone
                         </span>
                     </h2>
                    
