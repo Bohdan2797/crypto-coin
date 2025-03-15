@@ -5,6 +5,9 @@ export function MakingPass () {
         <section className="bg-[url(/bgMakingPassive.png)] bg-no-repeat bg-right-top bg-contain w-full min-h-min pb-20 mb-5 mt-30 pt-5">
             <div className="max-w-screen-2xl mx-auto w-full">
                 <h2 className="text-5xl w-5xl mt-14"
+                style={{
+                    textShadow: "1px 1px 10px #000"
+                }}
                 >The 3 ways of making passive income with BaseCore</h2>
                 <div className="grid grid-cols-4 gap-3 mt-20 mb-20 py-5 items-center">
                     <div></div> {/* Пустая первая колонка */}
