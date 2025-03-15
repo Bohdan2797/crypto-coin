@@ -22,7 +22,7 @@ export function Header() {
             <div className="w-full max-w-screen-2xl mx-auto mt-auto py-8">
                 <div className="flex justify-evenly items-center mt-4">
                     <div className="flex justify-center items-center pb-10">
-                            <Image src='/logo1.png' alt='logo BaseCore' width={250} height={150} />
+                            <Image src='/logo2.png' alt='logo BaseCore' width={350} height={150} />
                     </div>
                     <div className="flex flex-col w-1/3 ml-40 font-semibold gap-y-5">
                         <span className="">

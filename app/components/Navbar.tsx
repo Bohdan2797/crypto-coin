@@ -5,10 +5,9 @@ import { Links } from "../data/navLinks";
 export function Navbar() {
   return (
     <nav > 
-    <div className="w-full max-w-screen-2xl flex justify-between items-center mx-auto mb-10 pt-5">
-    <div className="flex justify-center items-center gap-2 px-5 py-2 rounded-2xl"
-  >
-    <Image src="/logo1.png" alt="logo" width={50} height={50} />
+      <div className="w-full max-w-screen-2xl flex justify-between items-center mx-auto mb-10 pt-5">
+        <div className="flex justify-center items-center gap-2 px-5 py-2 rounded-2xl">
+          <Image src="/logo1.png" alt="logo" width={50} height={50} />
         <span className="text-2xl font-semibold">BaseCore</span>
         </div>
         <ul className="flex gap-x-4 uppercase bg-[#838AA0]/10 backdrop-blur-md rounded-2xl py-3 px-4">
