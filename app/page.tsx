@@ -1,5 +1,6 @@
 import { BuildPage } from "./components/Build";
 import { Header } from "./components/Header";
+import { MakingPass } from "./components/MakingPass";
 import { OptionsForU } from "./components/OptionsForU";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
     <Header/>
     <BuildPage/>
     <OptionsForU/>
+    <MakingPass/>
     </div>
   )
 }

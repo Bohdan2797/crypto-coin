@@ -18,7 +18,7 @@ export function Navbar() {
             </li>
           ))}
         </ul>
-        <Link href="#" className=" bg-linear-30 from-[#2E727A] to-[#2E7A] py-3 px-5 rounded-xl transform hover:bg-linear-30 hover:from-[#2E7A] hover:to-[#2E727A] duration-300 transition-colors"> 
+        <Link href="#" className=" bg-linear-30 from-[#2E727A] to-[#2E7A] py-3 px-5 rounded-2xl transform hover:bg-linear-30 hover:from-[#2E7A] hover:to-[#2E727A] duration-300 transition-colors"> 
           BUY BCE
         </Link>
         </div>
