@@ -22,3 +22,13 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+@keyframes shrinkGap {
+  0% { gap: 1rem; }
+  50% { gap: 0.5rem; }
+  100% { gap: 1rem; }
+}
+
+.container:hover {
+  animation: shrinkGap 2s infinite;
+}
