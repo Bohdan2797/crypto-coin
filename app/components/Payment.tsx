@@ -14,12 +14,12 @@ export function Payment () {
                     <h3 className="text-green-500 text-2xl">Payment for services and goods</h3>
                 </div>
                 <div className="flex mt-20 gap-5 ">
-                    <div className="flex-[1] justify-between p-5 gap-10  border-1 border-gray-500 rounded-2xl flex flex-col">
+                    <div className="flex-[1] justify-between p-5 gap-10  border-1 border-gray-500 rounded-2xl flex flex-col shadow-xl shadow-blue-400/20">
                         <span>We are planning to create an ecosystem of services that will allow the integration of BaseCore into everyday life</span>
                         <span><span> 01 
                             </span> / 03</span>
                     </div>
-                    <div className="flex-[1] justify-between p-5 gap-10  border-1 border-gray-500 rounded-2xl flex flex-col">
+                    <div className="flex-[1] justify-between p-5 gap-10  border-1 border-gray-500 rounded-2xl flex flex-col shadow-xl shadow-green-400/20">
                         <span>We are planning to create an ecosystem of services that will allow the integration of BaseCore into everyday life</span>
                         <span><span> 02 
                             </span> / 03</span>

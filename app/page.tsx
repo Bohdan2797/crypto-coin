@@ -1,5 +1,6 @@
 import { BuildPage } from "./components/Build";
 import { Device } from "./components/device";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Invest } from "./components/Invest";
 import { MakingPass } from "./components/MakingPass";
@@ -18,6 +19,7 @@ export default function Home() {
     <WhyInvest/>
     <Device/>
     <Payment/>
+    <Footer/>
     </div>
   )
 }

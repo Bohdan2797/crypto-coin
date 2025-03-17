@@ -33,7 +33,7 @@ export function Invest() {
                     </div>
                     </div>
             </div>
-            <div className="flex justify-center items-center w-full py-20">
+            <div className="flex relative justify-center items-center w-full py-20">
                 <div className="flex flex-wrap  w-full gap-30 p-12 ">
                     
                     {/* Левая часть */}
@@ -66,6 +66,28 @@ export function Invest() {
                     <div className="w-full h-[300px] mt-6 bg-[url('/grafic2.png')] bg-center bg-contain bg-no-repeat"></div>
                     </div>
                 </div>
+
+
+                <div className="absolute bottom-15  left-1/2 transform -translate-x-1/2">
+                                                <div className="bg-gray-500 rounded-lg shadow-md p-4 flex items-center space-x-10 max-w-xs">
+                                                {/* Изображение карты */}
+                                                    <div className="flex-shrink-0">
+                                                        <img src="/icons/card.png" alt="Card" className="w-12 h-12 p-3 bg-white rounded-lg" />
+                                                    </div>
+
+                                                {/* Текстовая информация */}
+                                                    <div className="flex flex-col gap-5 border-l-2 border-green-500 pl-5">
+                                                        <div className="text-sm text-gray-600">Revenue</div>
+                                                        <div className="text-lg font-bold">$4,480</div>
+                                                        <div className="text-sm text-green-500 gap-3 flex items-center">
+                                                            <span>+1.5%</span>
+                                                            <span className="ml-1">Since last week</span>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
             </div>
 
 
