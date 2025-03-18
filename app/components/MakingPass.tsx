@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export function MakingPass () {
     return(
-        <section className="bg-[url(/bgMakingPassive.png)] bg-no-repeat bg-right-top bg-contain w-full min-h-min pb-20 mb-5 mt-30 pt-5">
+        <section className="bg-[url(/bgMakingPassive.png)] bg-no-repeat bg-right-top bg-cover xl:bg-contain w-full min-h-min pb-20 mb-5 mt-30 pt-5">
             <div className="max-w-screen-2xl mx-auto w-full">
-                <h2 className="text-5xl w-5xl mt-14"
+                <h2 className="text-xl px-5  lg:text-5xl xl:w-5xl mt-14"
                 style={{
                     textShadow: "1px 1px 10px #000"
                 }}
