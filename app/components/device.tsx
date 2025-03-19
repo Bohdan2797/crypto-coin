@@ -12,8 +12,8 @@ export function Device() {
       >
         You can pay and transfer coins through wallets on any device
       </h2>
-      <div className="flex flex-col lg:flex-row gap-y-10 justify-between items-center lg:items-start mt-30">
-        <div className="text-4xl text-center lg:text-left w-full lg:w-auto">
+      <div className="flex flex-col lg:flex-row gap-y-10 justify-around items-center lg:items-start mt-30">
+        <div className="text-4xl text-center lg:text-left w-full lg:w-auto max-w-[300px] mx-auto lg:mx-0">
           <h2 className="mb-10">Web wallet</h2>
           <Link
             href={"#"}
@@ -22,7 +22,7 @@ export function Device() {
             PAY
           </Link>
         </div>
-        <div className="flex flex-col [&_a]:text-xl gap-5 text-4xl lg:border-l-1 border-gray-500 lg:pl-10 text-center lg:text-left w-full lg:w-auto">
+        <div className="flex flex-col [&_a]:text-xl gap-5 text-4xl lg:border-l-1 border-gray-500 lg:pl-10 text-center lg:text-left w-full lg:w-auto max-w-[400px] mx-auto lg:mx-0">
           <h2>Mobile wallet</h2>
           <Link
             href={"#"}
@@ -49,7 +49,7 @@ export function Device() {
             GOOGLE PLAY
           </Link>
         </div>
-        <div className="flex flex-col font-normal [&_a]:text-xl gap-5 text-4xl lg:border-l-1 border-gray-500 lg:pl-10 text-center lg:text-left w-full lg:w-auto">
+        <div className="flex flex-col font-normal [&_a]:text-xl gap-5 text-4xl lg:border-l-1 border-gray-500 lg:pl-10 text-center lg:text-left w-full lg:w-auto max-w-[300px] mx-auto lg:mx-0">
           <h2>Desktop wallet</h2>
           <Link
             href={"#"}

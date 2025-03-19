@@ -5,9 +5,9 @@ export function Footer() {
         <section className="max-w-screen-2xl mx-auto px-4 py-8">
             <div className="flex flex-col lg:flex-row justify-between gap-10">
                 {/* Левый блок: Логотип и название */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3">
                     <Image src='/logo2.png' alt='logo BaseCore' width={200} height={200} />
-                    <h2 className="text-3xl font-bold">BaseCore</h2>
+                    <h2 className="text-xl sm:text-3xl font-bold">BaseCore</h2>
                 </div>
 
                 {/* Центральный блок: Ссылки и документы */}

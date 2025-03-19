@@ -4,16 +4,16 @@ import Link from "next/link";
 export function Payment () {
     return(
         <section className="mx-auto relative max-w-screen-2xl ">
-            <div className="flex flex-col lg:flex-row px-5 lg:px-0  items-center gap-10 mb-30">
+            <div className="flex flex-col lg:flex-row px-5 xl:px-0  items-center gap-10 mb-30">
                 <h2 className="text-green-500 text-4xl">Goals </h2>
                 <span className="text-3xl">We plan <span className="text-green-500"> to create an ecosystem of services </span> that will allow integrating BaseCore into people's everyday lives</span>
             </div>
             <section>
                 <div className="flex flex-col font-exo gap-10">
                     <h2 className="text-5xl w-full px-5 lg:w-2xl">Payment for services and goods</h2>
-                    <h3 className="text-green-500 px-5 lg:px-0 text-2xl">Payment for services and goods</h3>
+                    <h3 className="text-green-500 px-5 xl:px-0 text-2xl">Payment for services and goods</h3>
                 </div>
-                <div className="flex flex-col lg:flex-row mt-20 gap-5 ">
+                <div className="flex flex-col px-5 lg:flex-row mt-20 gap-5 ">
                     <div className="flex-[1] justify-between p-5 gap-10  border-1 border-gray-500 rounded-2xl flex flex-col shadow-xl shadow-blue-400/20">
                         <span>We are planning to create an ecosystem of services that will allow the integration of BaseCore into everyday life</span>
                         <span><span> 01 
@@ -38,13 +38,13 @@ export function Payment () {
                                 <div className="flex flex-wrap  w-full gap-30 p-12 ">
                                     
                                     {/* Левая часть */}
-                                    <div className="flex-1  font-exo   text-4xl text-left">
-                                    <h2 className="font-semibold "
+                                    <div className="flex-1 font-exo text-2xl lg:text-4xl text-left">
+                                    <h2 className="font-semibold px-5 lg:px-0"
                                     style={{
                                         textShadow: "1px 1px 10px #000"
                                     }}
                                     >The native BaseCore wallet</h2>
-                                    <ul className="mt-16 space-y-4 w-[400px] ml-5  text-xl text-gray-300">
+                                    <ul className="mt-8 lg:mt-16 space-y-4 w-full lg:w-[400px] mx-5 lg:ml-5 text-base lg:text-xl text-gray-300">
                                         <li>- Allows users to stake their BaseCore tokens directly from the wallet to earn passive income.</li>
                                         <li>- Supports token swaps, liquidity provision, and yield farming.</li>
                                         <li>- Shake your phone near the seller's phone to pay</li>
@@ -77,7 +77,7 @@ export function Payment () {
                                                     </div>
 
                                                 {/* Текстовая информация */}
-                                                    <div className="flex flex-col gap-5 border-l-2 border-green-500 pl-5">
+                                                    <div className="flex flex-col w-[200px] gap-5 border-l-2 border-green-500 pl-5">
                                                         <div className="text-sm text-gray-600">Revenue</div>
                                                         <div className="text-lg font-bold">$4,480</div>
                                                         <div className="text-sm text-green-500 gap-3 flex items-center">
@@ -92,7 +92,7 @@ export function Payment () {
 
                             <div className="bg-[url(/bgLastPayment.png)] flex-col lg:flex-row max-w-screen-xl mx-auto bg-no-repeat bg-top-left gap-5 rounded-2xl p-10 mb-10 border-1 border-gray-500 flex">
                                 <h2 className="flex-1 text-3xl mt-20">Development is planned for the period of june 2025</h2>
-                                <div className="flex flex-col gap-10 py-10 items-center text-2xl flex-1">
+                                <div className="flex flex-col gap-10 py-10 items-center text-xl lg:text-2xl flex-1">
                                     <Link href={"#"} 
                                     className=" bg-linear-30 from-[#2E727A] w-fit to-[#2E7A] py-3 px-5 rounded-2xl transform hover:bg-linear-30 hover:from-[#2E7A] hover:to-[#2E727A] duration-300 transition-colors"
                                     >Download whitepaper</Link>
@@ -101,7 +101,7 @@ export function Payment () {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="flex flex-col lg:flex-row px-5 lg:px-0 gap-10 mt-20 mb-10">
+                            <div className="flex flex-col xl:flex-row px-5 xl:px-0 gap-10 mt-20 mb-10">
                                 {/* Левый блок */}
                                 <div className="flex-[1]">
                                     <h2 className="text-2xl mt-10 font-bold"
@@ -121,7 +121,7 @@ export function Payment () {
 
                                     <div className="flex border-b border-gray-500 py-4">
                                         <span className="text-green-500 w-48 flex-shrink-0">Two-factor Authentication (2FA)</span>
-                                        <span>Two-factor Authentication (2FA) protects investors’ personal accounts from unauthorized access</span>
+                                        <span>Two-factor Authentication (2FA) protects investors' personal accounts from unauthorized access</span>
                                     </div>
 
                                     <div className="flex border-b border-gray-500 py-4">

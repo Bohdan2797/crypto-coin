@@ -18,19 +18,19 @@ export function BuildPage() {
             <span>equal to BCE</span>
           </div>
         </div>
-        <div className="flex flex-col w-full gap-y-5 mb-10 items-center lg:flex-row lg:gap-x-10 mt-14  lg:items-top">
+        <div className="flex flex-col w-full gap-y-5 mb-10 items-center xl:flex-row xl:gap-x-10 mt-14  xl:items-top">
           <span className="text-[#00E983] text-3xl font-semibold">
             Advantage
           </span>
-          <span className="w-[300px] lg:w-[800px] text-2xl font-exo">
+          <span className="w-full px-5 lg:w-[800px] text-2xl font-exo">
             BaseCore leverages advanced cryptographic protocols and
             decentralized consensus mechanisms to ensure tamper-proof
             transactions and data integrity. Immune to single points of failure,
             making it highly resistant to hacks and fraud.{" "}
           </span>
         </div>
-        <div className="flex flex-col lg:flex-row  mt-5 ">
-          <div className="flex flex-col gap-y-3 lg:pl-20 px-5 lg:px-0 max-w-xl">
+        <div className="flex flex-col xl:flex-row  mt-5 ">
+          <div className="flex flex-col gap-y-3 lg:pl-20 px-5 lg:px-0 mx-a max-w-xl">
             <Image
               src="/users-icon.svg"
               alt="user friendly"
@@ -47,9 +47,9 @@ export function BuildPage() {
               speed and efficiency as the network grows.
             </span>
           </div>
-          <div className="w-full flex-col lg:flex-row flex px-5 gap-5 mt-5 lg:gap-0 lg:mt-0 ">
+          <div className="w-full flex-col xl:flex-row flex px-5 gap-5 mt-5 xl:gap-0 xl:mt-0 ">
             {/* Первый блок с картинкой сверху */}
-            <div className="flex flex-col flex-1 bg-gray-500 gap-y-10 rounded-2xl shadow-2xl relative lg:left-7 z-10 ">
+            <div className="flex flex-col flex-1 bg-gray-500 gap-y-10 rounded-2xl shadow-2xl relative xl:left-7 z-10 ">
               <div className="relative w-full h-[188px] rounded-t-2xl ">
                 <Image
                   src="/bgFromCard.png"

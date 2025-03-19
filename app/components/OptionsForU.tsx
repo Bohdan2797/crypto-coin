@@ -62,7 +62,7 @@ export function OptionsForU() {
           Blockchain BaseCore assumes rewards for block validation to two
           participants in the network
         </h2>
-        <div className="w-full flex flex-col items-start pl-5 lg:items-end mt-4">
+        <div className="w-full flex flex-col items-start pl-5 lg:pr-5 lg:items-end mt-4">
           <div className="flex flex-col  items-start gap-y-2">
             
             {/* Используем flex-col для вертикального расположения */}
@@ -76,7 +76,7 @@ export function OptionsForU() {
             </div>
           </div>
         </div>
-        <div className="w-full border-2 border-green-500 rounded-2xl mt-20 mb-10 flex flex-col lg:flex-row gap-20 px-5 pt-6 pb-3">
+        <div className="w-full border-2  border-green-500 rounded-2xl mt-20 mb-10 flex flex-col lg:flex-row gap-20 px-5 pt-6 pb-3">
           <div className="text-xl font-semibold">
             <h2
               style={{
@@ -86,7 +86,7 @@ export function OptionsForU() {
               Stakers and masternodes receive rewards for block validation
             </h2>
           </div>
-          <div className="w-full flex flex-col lg:flex-row">
+          <div className="w-full flex  flex-col ">
             {/* Первый блок */}
             <div className="border-b-2 border-green-500 flex flex-col lg:flex-row gap-10 justify-between items-center pt-3 pb-5 lg:gap-30">
               <span className="text-xl font-bold text-nowrap text-green-500">

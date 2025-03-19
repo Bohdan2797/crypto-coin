@@ -95,9 +95,9 @@ export function WhyInvest() {
           </h2>
           <div className="flex flex-col lg:flex-row mt-5 lg:mt-0 gap-5">
             {/* Левые блоки с серым радиусом */}
-            <div className="flex-1 flex  gap-5 items-end">
+            <div className="flex-1 flex px-5 lg:px-0 gap-5 items-end">
               {/* Первый серый блок */}
-              <div className="border flex-1 border-gray-400 rounded-2xl p-5 flex flex-col justify-between h-[300px] lg:h-[250px]">
+              <div className="border flex-1 border-gray-400 rounded-2xl p-5 flex flex-col justify-between h-[300px] xl:h-[250px]">
                 <span className="text-lg font-medium">
                   The price of token is always equal to the price of BCE
                 </span>
@@ -112,7 +112,7 @@ export function WhyInvest() {
               </div>
 
               {/* Второй серый блок */}
-              <div className="border flex-1 border-gray-400 rounded-2xl p-5 flex flex-col justify-between h-[300px] lg:h-[250px]">
+              <div className="border flex-1 border-gray-400 rounded-2xl p-5 flex flex-col justify-between h-[300px] xl:h-[250px]">
                 <span className="text-lg font-medium">No risks involved</span>
                 <div className="flex justify-start">
                   <Image
@@ -126,7 +126,7 @@ export function WhyInvest() {
             </div>
 
             {/* Правый зеленый блок */}
-            <div className="flex-1 bg-[#00E983]/50 rounded-2xl p-5 flex flex-col justify-between">
+            <div className="flex-1 mx-5 lg:mx-0 bg-[#00E983]/50 rounded-2xl p-5 flex flex-col justify-between">
               {/* Текст вверху */}
               <span className="text-lg font-medium">
                 Investors have real-time access to the application and dynamics

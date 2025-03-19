@@ -20,7 +20,7 @@ export function Header() {
             </div>
             
             <div className="w-full max-w-screen-2xl mx-auto mt-20 py-8">
-                <div className="flex flex-col-reverse lg:flex-row gap-y-10 justify-evenly items-center mt-4">
+                <div className="flex flex-col-reverse md:flex-row gap-y-10 justify-evenly items-center mt-4">
                     <div className="flex justify-center items-center  lg:pb-10">
                             <Image src='/logo2.png' alt='logo BaseCore' width={350} height={150} className="w-[200px] h-[200px]" />
                     </div>
@@ -32,7 +32,7 @@ export function Header() {
                         Your hassle-free access to BaseCore                    
                         </span>
                     </div>
-                    <div className="flex gap-5 px-5 text-nowrap font-bold">
+                    <div className="flex flex-col lg:flex-row gap-5 px-5 text-nowrap font-bold">
                         <Link href="#" className="bg-linear-30 from-[#2E7A] to-[#2E727A] py-3 px-5 rounded-2xl transform hover:bg-linear-30 hover:from-[#2E727A] hover:to-[#2E7A] duration-300 transition-colors">
                             Get Started
                         </Link>
