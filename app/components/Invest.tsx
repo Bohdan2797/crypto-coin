@@ -58,7 +58,7 @@ export function Invest() {
         </div>
       </div>
       <div className="flex relative justify-center items-center w-full py-20">
-        <div className="flex flex-wrap  w-full gap-30 p-12 ">
+        <div className="flex flex-col lg:flex-row  flex-wrap  w-full gap-30 p-12 ">
           {/* Левая часть */}
           <div className="flex-1  font-exo   text-4xl text-left">
             <h2

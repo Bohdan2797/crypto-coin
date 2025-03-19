@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Footer() {
     return (
         <section className="max-w-screen-2xl mx-auto px-4 py-8">
-            <div className="flex justify-between gap-10">
+            <div className="flex flex-col lg:flex-row justify-between gap-10">
                 {/* Левый блок: Логотип и название */}
                 <div className="flex items-center gap-4">
                     <Image src='/logo2.png' alt='logo BaseCore' width={200} height={200} />
@@ -55,7 +55,7 @@ export function Footer() {
                 </div>
 
                 {/* Правый блок: Контакты и соцсети */}
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col items-center lg:items-start gap-4">
                     {/* Контакты */}
                     <div className="space-y-2">
                         <span className="flex items-center gap-2">
@@ -69,9 +69,9 @@ export function Footer() {
                     </div>
 
                     {/* Десктопные кошельки */}
-                    <div>
+                    <div className="flex flex-col items-center lg:items-start gap-4">
                         <h2 className="text-lg font-semibold">Desktop Wallets</h2>
-                        <div className="flex gap-4 mt-2">
+                        <div className="flex  gap-4 mt-2">
                             <Image src='/icons/windows.png' alt='app linux' width={30} height={30} />
                             <Image src='/icons/linux.png' alt='app linux' width={30} height={30} />
                             <Image src='/icons/macos.png' alt='app linux' width={30} height={30} />
@@ -81,7 +81,7 @@ export function Footer() {
                     {/* Соцсети */}
                     <div>
                         <h2 className="text-lg font-semibold">Find us on social media</h2>
-                        <div className="flex gap-4 mt-2">
+                        <div className="flex justify-center items-center lg:justify-start lg:items-start gap-4 mt-2">
                             <Image src='/iconsFooter/linkid.png' alt='link id' width={30} height={30} />
                             <Image src='/iconsFooter/twitter.png' alt='x - twitter' width={30} height={30} />
                             <Image src='/iconsFooter/telegram2.png' alt='telegram' width={30} height={30} />

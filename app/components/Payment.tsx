@@ -4,16 +4,16 @@ import Link from "next/link";
 export function Payment () {
     return(
         <section className="mx-auto relative max-w-screen-2xl ">
-            <div className="flex  items-center gap-10 mb-30">
+            <div className="flex flex-col lg:flex-row px-5 lg:px-0  items-center gap-10 mb-30">
                 <h2 className="text-green-500 text-4xl">Goals </h2>
                 <span className="text-3xl">We plan <span className="text-green-500"> to create an ecosystem of services </span> that will allow integrating BaseCore into people's everyday lives</span>
             </div>
             <section>
                 <div className="flex flex-col font-exo gap-10">
-                    <h2 className="text-5xl w-2xl">Payment for services and goods</h2>
-                    <h3 className="text-green-500 text-2xl">Payment for services and goods</h3>
+                    <h2 className="text-5xl w-full px-5 lg:w-2xl">Payment for services and goods</h2>
+                    <h3 className="text-green-500 px-5 lg:px-0 text-2xl">Payment for services and goods</h3>
                 </div>
-                <div className="flex mt-20 gap-5 ">
+                <div className="flex flex-col lg:flex-row mt-20 gap-5 ">
                     <div className="flex-[1] justify-between p-5 gap-10  border-1 border-gray-500 rounded-2xl flex flex-col shadow-xl shadow-blue-400/20">
                         <span>We are planning to create an ecosystem of services that will allow the integration of BaseCore into everyday life</span>
                         <span><span> 01 
@@ -28,7 +28,7 @@ export function Payment () {
                             <span>Payment facilities will be integrated in popular store transaction processing systems like Bitrix, Joomla, WordPress, Tilda, Shopify and others</span>
                             <div className=" flex justify-between items-end">
                                 <span>
-                                    <span> 02 </span> / 03  
+                                    <span> 03 </span> / 03  
                                 </span>
                                 <Image src='/services.png' alt="services BaseCore" width={200} height={40}/>
                             </div>
@@ -90,7 +90,7 @@ export function Payment () {
                                     </div>
                             </div>
 
-                            <div className="bg-[url(/bgLastPayment.png)] max-w-screen-xl mx-auto bg-no-repeat bg-top-left gap-5 rounded-2xl p-10 mb-10 border-1 border-gray-500 flex">
+                            <div className="bg-[url(/bgLastPayment.png)] flex-col lg:flex-row max-w-screen-xl mx-auto bg-no-repeat bg-top-left gap-5 rounded-2xl p-10 mb-10 border-1 border-gray-500 flex">
                                 <h2 className="flex-1 text-3xl mt-20">Development is planned for the period of june 2025</h2>
                                 <div className="flex flex-col gap-10 py-10 items-center text-2xl flex-1">
                                     <Link href={"#"} 
@@ -101,7 +101,7 @@ export function Payment () {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="flex gap-10 mt-20 mb-10">
+                            <div className="flex flex-col lg:flex-row px-5 lg:px-0 gap-10 mt-20 mb-10">
                                 {/* Левый блок */}
                                 <div className="flex-[1]">
                                     <h2 className="text-2xl mt-10 font-bold"
