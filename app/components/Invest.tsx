@@ -103,28 +103,30 @@ export function Invest() {
           </div>
         </div>
 
-        <div className="absolute bottom-15  left-1/2 transform -translate-x-1/2">
-          <div className="bg-gray-500 rounded-lg shadow-md p-4 flex items-center space-x-10 max-w-xs">
-            {/* Изображение карты */}
-            <div className="flex-shrink-0">
-              <img
-                src="/icons/card.png"
-                alt="Card"
-                className="w-12 h-12 p-3 bg-white rounded-lg"
-              />
-            </div>
+        <div className="absolute bottom-15 left-1/2 transform -translate-x-1/2 w-full max-w-[350px] sm:max-w-[400px] px-4">
+  <div className="bg-gray-500 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:space-x-10 space-y-4 sm:space-y-0">
+    {/* Изображение карты */}
+    <div className="flex-shrink-0">
+      <img
+        src="/icons/card.png"
+        alt="Card"
+        className="w-12 h-12 p-3 bg-white rounded-lg"
+      />
+    </div>
 
-            {/* Текстовая информация */}
-            <div className="flex flex-col gap-5 border-l-2 border-green-500 pl-5">
-              <div className="text-sm text-gray-600">Revenue</div>
-              <div className="text-lg font-bold">$4,480</div>
-              <div className="text-sm text-green-500 gap-3 flex items-center">
-                <span>+1.5%</span>
-                <span className="ml-1">Since last week</span>
-              </div>
-            </div>
-          </div>
-        </div>
+    {/* Текстовая информация */}
+    <div className="flex flex-col gap-2 sm:gap-5 sm:border-l-2 sm:border-green-500 sm:pl-5 text-center sm:text-left">
+      <div className="text-sm text-gray-600">Revenue</div>
+      <div className="text-lg font-bold">$4,480</div>
+      <div className="text-sm text-green-500 flex flex-col sm:flex-row items-center gap-1 sm:gap-3">
+        <span>+1.5%</span>
+        <span>Since last week</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       </div>
 
       <div className="flex justify-center items-center w-full py-20">

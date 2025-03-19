@@ -1,5 +1,4 @@
 'use client'
-import Link from "next/link";
 import { useSlider } from "../hooks/useSlider";
 
 export function MakingPass() {
