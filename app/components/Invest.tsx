@@ -1,6 +1,11 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "../hooks/useTranslation";
+
 export function Invest() {
+  const { t } = useTranslation();
+  
   return (
     <section className="w-full max-w-screen-2xl min-h-screen mx-auto">
       <h2
@@ -9,12 +14,12 @@ export function Invest() {
           textShadow: "1px 1px 10px #000",
         }}
       >
-        The most affordable way with an entry threshold of just 0.001 BCE is
+        {t('invest.mainTitle')}
         <span className="text-green-500">
           {" "}
-          to invest in an instant masternode
+          {t('invest.highlight')}
         </span>
-        , which partakes in network block validation.
+        {t('invest.subtitle')}
       </h2>
       <div className="flex flex-col lg:flex-row mt-15">
         <div className="flex-1 ">
@@ -27,64 +32,52 @@ export function Invest() {
           />
         </div>
         <div className="flex-1 grid grid-cols-2 px-3 gap-4">
-          <div className="flex flex-col  gap-y-3 text-left bg-gray-800 p-4 rounded-2xl">
+          <div className="flex flex-col gap-y-3 text-left bg-gray-800 p-4 rounded-2xl">
             <Image
               src="/icons/calender.png"
               alt="logo"
               width={40}
               height={40}
             />
-            <span>Rewards for generating new blocks are accrued daily</span>
+            <span>{t('invest.features.daily')}</span>
           </div>
-          <div className="flex flex-col  gap-y-3 text-left bg-gray-800 p-4 rounded-2xl">
+          <div className="flex flex-col gap-y-3 text-left bg-gray-800 p-4 rounded-2xl">
             <Image src="/icons/grafick.png" alt="logo" width={40} height={40} />
-            <span>
-              Rewards grow in proportion to the number of BCE coins invested
-            </span>
+            <span>{t('invest.features.proportion')}</span>
           </div>
-          <div className="flex flex-col  gap-y-3 text-left bg-gray-800 p-4 rounded-2xl">
+          <div className="flex flex-col gap-y-3 text-left bg-gray-800 p-4 rounded-2xl">
             <Image src="/icons/circkle.png" alt="logo" width={40} height={40} />
-            <span>
-              Rewards are calculated based on the number of coins invested in
-              the masternode
-            </span>
+            <span>{t('invest.features.calculation')}</span>
           </div>
-          <div className="flex flex-col  gap-y-3 text-left bg-gray-800 p-4 rounded-2xl">
+          <div className="flex flex-col gap-y-3 text-left bg-gray-800 p-4 rounded-2xl">
             <Image src="/icons/dollar.png" alt="logo" width={40} height={40} />
-            <span>
-              The more you invest in BCE – the more rewards you will receive
-            </span>
+            <span>{t('invest.features.more')}</span>
           </div>
         </div>
       </div>
       <div className="flex relative justify-center items-center w-full py-20">
-        <div className="flex flex-col lg:flex-row  flex-wrap  w-full gap-30 p-12 ">
-          {/* Левая часть */}
-          <div className="flex-1  font-exo   text-4xl text-left">
+        <div className="flex flex-col lg:flex-row flex-wrap w-full gap-30 p-12">
+          <div className="flex-1 font-exo text-4xl text-left">
             <h2
-              className="font-semibold "
+              className="font-semibold"
               style={{
                 textShadow: "1px 1px 10px #000",
               }}
             >
-              Every day, your balance
+              {t('invest.balance.title')}
             </h2>
-            <ul className="mt-16 space-y-4  text-xl text-gray-300">
-              <li>- Will receive a reward for</li>
-              <li>- Generating new blocks in the blockchain</li>
-              <li>
-                - Will receive a reward for generating new blocks in the
-                blockchain
-              </li>
+            <ul className="mt-16 space-y-4 text-xl text-gray-300">
+              <li>- {t('invest.balance.points.first')}</li>
+              <li>- {t('invest.balance.points.second')}</li>
+              <li>- {t('invest.balance.points.third')}</li>
             </ul>
           </div>
 
-          {/* Правая часть */}
-          <div className="flex-1 flex flex-col bg-gray-700/50 rounded-2xl px-6 py-2 shadow-xl shadow-green-500/20 ">
+          <div className="flex-1 flex flex-col bg-gray-700/50 rounded-2xl px-6 py-2 shadow-xl shadow-green-500/20">
             <h2 className="text-2xl font-semibold text-left">
-              <span className="text-gray-300 font-light">Sales Report</span>
+              <span className="text-gray-300 font-light">{t('invest.salesReport.title')}</span>
               <span className="text-green-400 text-4xl font-bold block mt-2">
-                4.65 K
+                {t('invest.salesReport.amount')}
               </span>
             </h2>
 
@@ -95,47 +88,42 @@ export function Invest() {
                 width={24}
                 height={24}
               />
-              +7.5%
+              {t('invest.salesReport.increase')}
             </span>
 
-            {/* График */}
             <div className="w-full h-[300px] mt-6 bg-[url('/grafic2.png')] bg-center bg-contain bg-no-repeat"></div>
           </div>
         </div>
 
         <div className="absolute bottom-15 left-1/2 transform -translate-x-1/2 w-full max-w-[350px] sm:max-w-[400px] px-4">
-  <div className="bg-gray-500 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:space-x-10 space-y-4 sm:space-y-0">
-    {/* Изображение карты */}
-    <div className="flex-shrink-0">
-      <img
-        src="/icons/card.png"
-        alt="Card"
-        className="w-12 h-12 p-3 bg-white rounded-lg"
-      />
-    </div>
+          <div className="bg-gray-500 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:space-x-10 space-y-4 sm:space-y-0">
+            <div className="flex-shrink-0">
+              <img
+                src="/icons/card.png"
+                alt="Card"
+                className="w-12 h-12 p-3 bg-white rounded-lg"
+              />
+            </div>
 
-    {/* Текстовая информация */}
-    <div className="flex flex-col gap-2 sm:gap-5 sm:border-l-2 sm:border-green-500 sm:pl-5 text-center sm:text-left">
-      <div className="text-sm text-gray-600">Revenue</div>
-      <div className="text-lg font-bold">$4,480</div>
-      <div className="text-sm text-green-500 flex flex-col sm:flex-row items-center gap-1 sm:gap-3">
-        <span>+1.5%</span>
-        <span>Since last week</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+            <div className="flex flex-col gap-2 sm:gap-5 sm:border-l-2 sm:border-green-500 sm:pl-5 text-center sm:text-left">
+              <div className="text-sm text-gray-600">{t('invest.revenue.title')}</div>
+              <div className="text-lg font-bold">{t('invest.revenue.amount')}</div>
+              <div className="text-sm text-green-500 flex flex-col sm:flex-row items-center gap-1 sm:gap-3">
+                <span>{t('invest.revenue.increase')}</span>
+                <span>{t('invest.revenue.period')}</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="flex justify-center items-center w-full py-20">
-        <div className="flex flex-wrap  w-full gap-30 p-12 ">
-          <div className="flex-1 flex flex-col bg-gray-700/50 rounded-2xl px-6 py-2 shadow-xl shadow-blue-400/20 ">
+        <div className="flex flex-wrap flex-col md:flex-row w-full gap-30 p-12">
+          <div className="flex-1 flex flex-col bg-gray-700/50 rounded-2xl px-6 py-2 shadow-xl shadow-blue-400/20">
             <h2 className="text-2xl font-semibold text-left">
-              <span className="text-gray-300 font-light">Monthly Profit</span>
+              <span className="text-gray-300 font-light">{t('invest.monthlyProfit.title')}</span>
               <span className="text-green-400 text-4xl font-bold block mt-2">
-                $1 250,98
+                {t('invest.monthlyProfit.amount')}
               </span>
             </h2>
 
@@ -146,60 +134,54 @@ export function Invest() {
                 width={24}
                 height={24}
               />
-              +1.5%
+              {t('invest.monthlyProfit.increase')}
             </span>
             <div className="w-full h-[300px] mt-6 bg-[url('/rectangle.png')] bg-center bg-contain bg-no-repeat"></div>
           </div>
 
-          <div className="flex-1  font-exo   text-4xl text-left">
+          <div className="flex-1 font-exo text-4xl text-left">
             <h2
-              className="font-semibold "
+              className="font-semibold"
               style={{
                 textShadow: "1px 1px 10px #000",
               }}
             >
-              What does income depend on?
+              {t('invest.income.title')}
             </h2>
-            <ul className="mt-16 space-y-4  text-xl text-gray-300">
-              <li>
-                - The reward is calculated depending on the number of coins
-                invested in the masternode.
-              </li>
-              <li>
-                - The more you invest in BCE, the more rewards you will receive
-              </li>
+            <ul className="mt-16 space-y-4 text-xl text-gray-300">
+              <li>- {t('invest.income.points.first')}</li>
+              <li>- {t('invest.income.points.second')}</li>
             </ul>
           </div>
         </div>
       </div>
       <div className="flex justify-center items-center w-full py-20 bg-[url(/bgInvest.png)] bg-no-repeat bg-left-top border-1 border-gray-500 rounded-2xl shadow-xl shadow-green-500/20 mb-20">
-        <div className="flex flex-wrap  w-full gap-30 p-12 ">
+        <div className="flex flex-wrap w-full gap-30 p-12">
           <div className="flex flex-1 flex-col text-4xl py-3 gap-y-10">
-            <span>How to join an instant masternode?</span>
+            <span>{t('invest.join.title')}</span>
             <span className="text-2xl font-exo">
-              The easiest way is to join through a pool on the BCE2um.com
-              exchange.
+              {t('invest.join.subtitle')}
             </span>
           </div>
           <div className="flex-1">
             <ul className="flex flex-col gap-y-5 text-3xl [&_span]:text-green-500 [&_span]:text-xl">
               <li>
-                <span>01 </span>Register on the exchange
+                <span>01 </span>{t('invest.join.steps.first')}
               </li>
               <Link
                 href="#"
                 className="w-fit ml-[35px] bg-linear-30 from-[#2E727A] to-[#2E7A] py-3 px-10 rounded-2xl transform hover:bg-linear-30 hover:from-[#2E7A] hover:to-[#2E727A] duration-300 transition-colors"
               >
-                REGISTER
+                {t('invest.join.register')}
               </Link>
               <li>
-                <span>02 </span>Buy BCE coins
+                <span>02 </span>{t('invest.join.steps.second')}
               </li>
               <li>
-                <span>03 </span>Send coins to masternode
+                <span>03 </span>{t('invest.join.steps.third')}
               </li>
               <li>
-                <span>04 </span>Wait for the reward
+                <span>04 </span>{t('invest.join.steps.fourth')}
               </li>
             </ul>
           </div>

@@ -3,9 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { Links } from "../data/navLinks";
 import { useState } from "react";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useTranslation } from "../hooks/useTranslation";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation();
+
+  // Функция для преобразования ключа в формат для перевода
+  const getTranslationKey = (link: string) => {
+    // Преобразуем первую букву в нижний регистр и добавляем остальные буквы как есть
+    return link.charAt(0).toLowerCase() + link.slice(1);
+  };
 
   return (
     <nav> 
@@ -37,7 +46,7 @@ export function Navbar() {
                 className="text-2xl font-semibold hover:text-[#2E7A] transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {link}
+                {t(`nav.${getTranslationKey(link)}`)}
               </Link>
             ))}
             <Link 
@@ -45,8 +54,11 @@ export function Navbar() {
               className="bg-linear-30 from-[#2E727A] to-[#2E7A] py-3 px-8 rounded-2xl transform hover:bg-linear-30 hover:from-[#2E7A] hover:to-[#2E727A] duration-300 transition-colors text-xl"
               onClick={() => setIsMenuOpen(false)}
             >
-              BUY BCE
+              {t('nav.buyBce')}
             </Link>
+            <div className="mt-4">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
 
@@ -54,12 +66,16 @@ export function Navbar() {
         <ul className="hidden xl:flex gap-x-4 uppercase bg-[#838AA0]/10 backdrop-blur-md rounded-2xl py-3 px-4">
           {Links.map((link, index) => (
             <li key={index} className="px-3 py-2 border-1 border-transparent hover:border-[#2E7A] transform-border transition-colors duration-500 rounded-2xl"> 
-              <Link href="#">{link}</Link>
+              <Link href="#">{t(`nav.${getTranslationKey(link)}`)}</Link>
             </li>
           ))}
         </ul>
+        <div className="hidden xl:block">
+          <LanguageSwitcher />
+        </div>
+
         <Link href="#" className="hidden xl:block bg-linear-30 from-[#2E727A] to-[#2E7A] py-3 px-5 rounded-2xl transform hover:bg-linear-30 hover:from-[#2E7A] hover:to-[#2E727A] duration-300 transition-colors"> 
-          BUY BCE
+          {t('nav.buyBce')}
         </Link>
       </div>
     </nav>

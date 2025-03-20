@@ -1,0 +1,336 @@
+{
+  "nav": {
+    "home": "HOME",
+    "staking": "STAKING",
+    "ecoFriendlyMining": "ECO-FRIENDLY MINING",
+    "howToBuy": "HOW TO BUY",
+    "aboutBCE": "ABOUT BCE",
+    "buyBce": "BUY BCE"
+  },
+  "hero": {
+    "title": "Welcome to BaseCore",
+    "subtitle": "New era in crypto",
+    "tagline": "BaseCore :",
+    "mainText": "Secure, Scalable, For Everyone",
+    "mission": "The main mission of the project is to make BaseCore accessible to everyone and lower the entry threshold for all investors.",
+    "access": "Your hassle-free access to BaseCore",
+    "buttons": {
+      "getStarted": "Get Started",
+      "getBasename": "Get a Basename"
+    }
+  },
+  "build": {
+    "fork": {
+      "title": "BaseCore Fork",
+      "subtitle": "on Proof of Stake Consensus"
+    },
+    "investment": {
+      "title": "Minimum investment amount",
+      "subtitle": "from 0.0001 BCE"
+    },
+    "stablecoin": {
+      "title": "Stablecoin, the price is always",
+      "subtitle": "equal to BCE"
+    },
+    "advantage": {
+      "title": "Advantage",
+      "description": "BaseCore leverages advanced cryptographic protocols and decentralized consensus mechanisms to ensure tamper-proof transactions and data integrity. Immune to single points of failure, making it highly resistant to hacks and fraud."
+    },
+    "scalability": {
+      "title": "Scalability Without Compromise",
+      "description": "Built to handle high transaction volumes with low latency, BaseCore ensures seamless performance even during peak demand.",
+      "subdescription": "Utilizes innovative layer-2 solutions or sharding to maintain speed and efficiency as the network grows."
+    },
+    "cards": {
+      "userFriendly": {
+        "title": "User-Friendly",
+        "description": "BaseCore simplifies blockchain adoption with intuitive interfaces, developer-friendly tools, and seamless integration for businesses and end-users. Reduces the complexity of blockchain technology, making it accessible to everyone."
+      },
+      "ecoFriendly": {
+        "title": "Eco-Friendly",
+        "description": "BaseCore employs a sustainable consensus mechanism (e.g., Proof-of-Stake or hybrid models) to minimize energy consumption while maintaining network security. Ideal for eco-conscious projects and enterprises."
+      }
+    }
+  },
+  "features": {
+    "title": "Our Features",
+    "description": "Discover what makes us unique",
+    "items": {
+      "security": "Advanced Security",
+      "speed": "Lightning Fast",
+      "reliability": "High Reliability"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 BaseCore. All rights reserved.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "support": "Support"
+    }
+  },
+  "footerNew": {
+    "aboutCoin": {
+      "title": "About the coin",
+      "links": {
+        "income": "Income",
+        "howToBuy": "How to buy",
+        "roadmap": "Roadmap",
+        "blog": "Blog",
+        "technology": "Technology",
+        "wallet": "Wallet",
+        "team": "Team",
+        "news": "News"
+      }
+    },
+    "documents": {
+      "title": "Documents",
+      "whitepaper": "Whitepaper"
+    },
+    "contact": {
+      "email": "support@bceadd.io"
+    },
+    "desktopWallets": {
+      "title": "Desktop Wallets",
+      "windows": "Windows",
+      "linux": "Linux",
+      "macos": "MacOS"
+    },
+    "social": {
+      "title": "Find us on social media",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "telegram": "Telegram"
+    }
+  },
+  "options": {
+    "title": "Why is our blockchain the best option for you?",
+    "slider": {
+      "first": {
+        "number": "01",
+        "total": "02",
+        "title": "Low Transaction Costs",
+        "description": "By optimizing network resources, BaseCore offers ultra-low transaction fees, making it cost-effective for microtransactions and large-scale operations alike."
+      },
+      "second": {
+        "number": "02",
+        "total": "02",
+        "title": "Privacy Features",
+        "description": "BaseCore integrates optional privacy protocols, allowing users to conduct confidential transactions when needed. Balances transparency with privacy for diverse use cases."
+      }
+    },
+    "rewards": {
+      "title": "Blockchain BaseCore assumes rewards for block validation to two participants in the network",
+      "participants": {
+        "first": "stackers",
+        "second": "masternodes"
+      },
+      "info": {
+        "title": "Stakers and masternodes receive rewards for block validation",
+        "firstBlock": {
+          "amount": "0.5 BCE",
+          "description": "Is generated every minute, with 0.005 BCE allocated to stakers"
+        },
+        "secondBlock": {
+          "ratio": "1:99 ratio",
+          "description": "Division with 0.495 BCE allocated to masternodes"
+        }
+      }
+    }
+  },
+  "passive": {
+    "title": "The 3 ways of making passive income with BaseCore",
+    "cards": {
+      "stacker": {
+        "title": "Stacker",
+        "required": {
+          "label": "Required minimum",
+          "value": "from 1 BCE"
+        },
+        "reward": {
+          "label": "Reward",
+          "value": "0.005 BCE"
+        }
+      },
+      "masternode": {
+        "title": "Masternode",
+        "required": {
+          "label": "Required minimum",
+          "value": "from 1000 BCE"
+        },
+        "reward": {
+          "label": "Reward",
+          "value": "0.495 BCE"
+        }
+      },
+      "masternodeInstant": {
+        "title": "Masternode instant",
+        "required": {
+          "label": "Required minimum",
+          "value": "from 0.001 BCE"
+        },
+        "reward": {
+          "label": "Reward",
+          "value": "0.495 BCE"
+        }
+      }
+    }
+  },
+  "invest": {
+    "mainTitle": "The most affordable way with an entry threshold of just 0.001 BCE is",
+    "highlight": "to invest in an instant masternode",
+    "subtitle": ", which partakes in network block validation.",
+    "features": {
+      "daily": "Rewards for generating new blocks are accrued daily",
+      "proportion": "Rewards grow in proportion to the number of BCE coins invested",
+      "calculation": "Rewards are calculated based on the number of coins invested in the masternode",
+      "more": "The more you invest in BCE – the more rewards you will receive"
+    },
+    "balance": {
+      "title": "Every day, your balance",
+      "points": {
+        "first": "Will receive a reward for",
+        "second": "Generating new blocks in the blockchain",
+        "third": "Will receive a reward for generating new blocks in the blockchain"
+      }
+    },
+    "salesReport": {
+      "title": "Sales Report",
+      "amount": "4.65 K",
+      "increase": "+7.5%"
+    },
+    "revenue": {
+      "title": "Revenue",
+      "amount": "$4,480",
+      "increase": "+1.5%",
+      "period": "Since last week"
+    },
+    "monthlyProfit": {
+      "title": "Monthly Profit",
+      "amount": "$1 250,98",
+      "increase": "+1.5%"
+    },
+    "income": {
+      "title": "What does income depend on?",
+      "points": {
+        "first": "The reward is calculated depending on the number of coins invested in the masternode.",
+        "second": "The more you invest in BCE, the more rewards you will receive"
+      }
+    },
+    "join": {
+      "title": "How to join an instant masternode?",
+      "subtitle": "The easiest way is to join through a pool on the BCE2um.com exchange.",
+      "steps": {
+        "first": "Register on the exchange",
+        "second": "Buy BCE coins",
+        "third": "Send coins to masternode",
+        "fourth": "Wait for the reward"
+      },
+      "register": "REGISTER"
+    }
+  },
+  "whyInvest": {
+    "title": "Why invest in BaseCore?",
+    "partnerships": "Partnerships: Strategic partnerships with businesses, governments, and other blockchain projects can enhance BaseCore's utility and value.",
+    "security": {
+      "title": "The security of BCE",
+      "tokenPrice": "The price of token is always equal to the price of BCE",
+      "noRisks": "No risks involved",
+      "realTimeAccess": "Investors have real-time access to the application and dynamics of their coins",
+      "sellOptions": "Investors can sell their coins on exchanges or via P2P network"
+    }
+  },
+  "devices": {
+    "title": "You can pay and transfer coins through wallets on any device",
+    "webWallet": {
+      "title": "Web wallet",
+      "action": "PAY"
+    },
+    "mobileWallet": {
+      "title": "Mobile wallet",
+      "appStore": "APP STORE",
+      "googlePlay": "GOOGLE PLAY"
+    },
+    "desktopWallet": {
+      "title": "Desktop wallet",
+      "macOS": "MAC OS",
+      "linux": "LINUX",
+      "windows": "WINDOWS"
+    }
+  },
+  "payment": {
+    "goals": {
+      "title": "Goals",
+      "description": "We plan to create an ecosystem of services that will allow integrating BaseCore into people's everyday lives"
+    },
+    "services": {
+      "title": "Payment for services and goods",
+      "subtitle": "Payment for services and goods",
+      "cards": {
+        "first": {
+          "text": "We are planning to create an ecosystem of services that will allow the integration of BaseCore into everyday life",
+          "number": "01",
+          "total": "03"
+        },
+        "second": {
+          "text": "We are planning to create an ecosystem of services that will allow the integration of BaseCore into everyday life",
+          "number": "02",
+          "total": "03"
+        },
+        "third": {
+          "text": "Payment facilities will be integrated in popular store transaction processing systems like Bitrix, Joomla, WordPress, Tilda, Shopify and others",
+          "number": "03",
+          "total": "03"
+        }
+      }
+    },
+    "wallet": {
+      "title": "The native BaseCore wallet",
+      "features": {
+        "staking": "Allows users to stake their BaseCore tokens directly from the wallet to earn passive income.",
+        "swaps": "Supports token swaps, liquidity provision, and yield farming.",
+        "phonePayment": "Shake your phone near the seller's phone to pay",
+        "support": "While primarily designed for BaseCore tokens, the wallet may also support other cryptocurrencies and tokens within the ecosystem."
+      }
+    },
+    "salesReport": {
+      "title": "Sales Report",
+      "amount": "4.65 K",
+      "increase": "+7.5%"
+    },
+    "revenue": {
+      "title": "Revenue",
+      "amount": "$4,480",
+      "increase": "+1.5%",
+      "period": "Since last week"
+    },
+    "development": {
+      "title": "Development is planned for the period of june 2025",
+      "buttons": {
+        "whitepaper": "Download whitepaper",
+        "roadmap": "View Road Map"
+      }
+    },
+    "security": {
+      "title": "We have implemented the most advanced investor account protection",
+      "features": {
+        "monitoring": {
+          "title": "Unique monitoring system",
+          "description": "We have deployed a unique monitoring system to detect suspicious activity from unauthorized actions in 24/7 mode"
+        },
+        "twoFactor": {
+          "title": "Two-factor Authentication (2FA)",
+          "description": "Two-factor Authentication (2FA) protects investors' personal accounts from unauthorized access"
+        },
+        "ddos": {
+          "title": "DDoS protection",
+          "description": "DDoS protection is a standard component of the system"
+        },
+        "servers": {
+          "title": "Protected from attacks",
+          "description": "The servers of the exchange and wallets are protected from attacks"
+        }
+      }
+    }
+  }
+} 

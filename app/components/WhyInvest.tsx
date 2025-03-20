@@ -1,11 +1,14 @@
+'use client'
 import Image from "next/image";
+import { useTranslation } from "../hooks/useTranslation";
 
 export function WhyInvest() {
+  const { t } = useTranslation();
+  
   return (
-    <section className="bg-[#414757] min-h-screen ">
+    <section className="bg-[#414757] min-h-screen">
       <div className="max-w-screen-2xl mx-auto pt-20">
-        <div className="flex flex-col lg:flex-row mt-10 ">
-          {/* Первый блок */}
+        <div className="flex flex-col lg:flex-row mt-10">
           <div className="flex-1 p-4 gap-y-15 flex flex-col">
             <h2
               className="text-4xl font-bold mb-2"
@@ -13,7 +16,7 @@ export function WhyInvest() {
                 textShadow: "1px 1px 10px #000",
               }}
             >
-              Why invest in BaseCore?
+              {t('whyInvest.title')}
             </h2>
             <span className="ml-5 w-xs">
               <img
@@ -22,14 +25,11 @@ export function WhyInvest() {
                 className="w-6 h-6 mr-2 mb-3"
               />
               <span className="flex items-center">
-                Partnerships: Strategic partnerships with businesses,
-                governments, and other blockchain projects can enhance
-                BaseCore’s utility and value.
+                {t('whyInvest.partnerships')}
               </span>
             </span>
           </div>
 
-          {/* Второй блок */}
           <div className="flex-2 p-4 grid grid-cols-2 grid-rows-2 gap-10">
             <div className="[&_img]:mb-3">
               <img
@@ -38,9 +38,7 @@ export function WhyInvest() {
                 className="w-6 h-6 mr-2"
               />
               <span className="flex items-center">
-                Partnerships: Strategic partnerships with businesses,
-                governments, and other blockchain projects can enhance
-                BaseCore’s utility and value.
+                {t('whyInvest.partnerships')}
               </span>
             </div>
 
@@ -51,9 +49,7 @@ export function WhyInvest() {
                 className="w-6 h-6 mr-2"
               />
               <span className="flex items-center">
-                Partnerships: Strategic partnerships with businesses,
-                governments, and other blockchain projects can enhance
-                BaseCore’s utility and value.
+                {t('whyInvest.partnerships')}
               </span>
             </div>
 
@@ -64,9 +60,7 @@ export function WhyInvest() {
                 className="w-6 h-6 mr-2"
               />
               <span className="flex items-center">
-                Partnerships: Strategic partnerships with businesses,
-                governments, and other blockchain projects can enhance
-                BaseCore’s utility and value.
+                {t('whyInvest.partnerships')}
               </span>
             </div>
 
@@ -77,9 +71,7 @@ export function WhyInvest() {
                 className="w-6 h-6 mr-2"
               />
               <span className="flex items-center">
-                Partnerships: Strategic partnerships with businesses,
-                governments, and other blockchain projects can enhance
-                BaseCore’s utility and value.
+                {t('whyInvest.partnerships')}
               </span>
             </div>
           </div>
@@ -91,15 +83,13 @@ export function WhyInvest() {
               textShadow: "1px 1px 10px #000",
             }}
           >
-            The security of BCE
+            {t('whyInvest.security.title')}
           </h2>
           <div className="flex flex-col lg:flex-row mt-5 lg:mt-0 gap-5">
-            {/* Левые блоки с серым радиусом */}
             <div className="flex-1 flex px-5 lg:px-0 gap-5 items-end">
-              {/* Первый серый блок */}
               <div className="border flex-1 border-gray-400 rounded-2xl p-5 flex flex-col justify-between h-[300px] xl:h-[250px]">
                 <span className="text-lg font-medium">
-                  The price of token is always equal to the price of BCE
+                  {t('whyInvest.security.tokenPrice')}
                 </span>
                 <div className="flex justify-start">
                   <Image
@@ -111,9 +101,8 @@ export function WhyInvest() {
                 </div>
               </div>
 
-              {/* Второй серый блок */}
               <div className="border flex-1 border-gray-400 rounded-2xl p-5 flex flex-col justify-between h-[300px] xl:h-[250px]">
-                <span className="text-lg font-medium">No risks involved</span>
+                <span className="text-lg font-medium">{t('whyInvest.security.noRisks')}</span>
                 <div className="flex justify-start">
                   <Image
                     src="/icons/Filter 5.png"
@@ -125,17 +114,12 @@ export function WhyInvest() {
               </div>
             </div>
 
-            {/* Правый зеленый блок */}
             <div className="flex-1 mx-5 lg:mx-0 bg-[#00E983]/50 rounded-2xl p-5 flex flex-col justify-between">
-              {/* Текст вверху */}
               <span className="text-lg font-medium">
-                Investors have real-time access to the application and dynamics
-                of their coins
+                {t('whyInvest.security.realTimeAccess')}
               </span>
 
-              {/* Контейнер для картинок */}
               <div className="flex items-end justify-between mt-4">
-                {/* Левая картинка (прижата к низу и левому краю) */}
                 <div className="flex items-end">
                   <Image
                     src="/bgIcons.png"
@@ -145,7 +129,6 @@ export function WhyInvest() {
                   />
                 </div>
 
-                {/* Правая картинка (занимает больше места) */}
                 <div className="flex-1 flex justify-end">
                   <Image
                     src="/bgGreen.png"
@@ -158,12 +141,10 @@ export function WhyInvest() {
             </div>
           </div>
           <div className="flex flex-col lg:flex-row px-3 lg:px-0 gap-y-5 mt-5 gap-x-5">
-            {/* Первый блок (40%) */}
             <div className="flex-[2]">
-              {/* Занимает 2 части из 5 (40%) */}
-              <div className=" bg-[#0073E5] rounded-2xl p-5  flex flex-col justify-between h-[250px] ">
+              <div className="bg-[#0073E5] rounded-2xl p-5 flex flex-col justify-between h-[250px]">
                 <span className="text-lg font-medium">
-                  Investors can sell their coins on exchanges or via P2P network
+                  {t('whyInvest.security.sellOptions')}
                 </span>
                 <div className="flex justify-start">
                   <Image
@@ -176,13 +157,10 @@ export function WhyInvest() {
               </div>
             </div>
 
-            {/* Второй блок (30%) */}
             <div className="flex-[1]">
-              {" "}
-              {/* Занимает 1.5 части из 5 (30%) */}
-              <div className="border border-gray-400 rounded-2xl p-5 h-[250px] flex flex-col justify-between ">
+              <div className="border border-gray-400 rounded-2xl p-5 h-[250px] flex flex-col justify-between">
                 <span className="text-lg font-medium">
-                  Investors can sell their coins on exchanges or via P2P network
+                  {t('whyInvest.security.sellOptions')}
                 </span>
                 <div className="flex justify-start">
                   <Image
@@ -195,13 +173,10 @@ export function WhyInvest() {
               </div>
             </div>
 
-            {/* Третий блок (30%) */}
             <div className="flex-[1.5]">
-              {" "}
-              {/* Занимает 1.5 части из 5 (30%) */}
-              <div className="bg-[#8E94A7] rounded-2xl p-5 h-[250px] flex flex-col justify-between ">
+              <div className="bg-[#8E94A7] rounded-2xl p-5 h-[250px] flex flex-col justify-between">
                 <span className="text-lg font-medium">
-                  Investors can sell their coins on exchanges or via P2P network
+                  {t('whyInvest.security.sellOptions')}
                 </span>
                 <div className="flex justify-start">
                   <Image

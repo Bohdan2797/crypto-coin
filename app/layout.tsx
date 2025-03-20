@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { LanguageProvider } from "./context/LanguageContext";
 
 
 
@@ -17,8 +18,8 @@ export default function RootLayout({
     <html lang="en">
       <body
       >
-        {children}
-      </body>
+        <LanguageProvider>{children}</LanguageProvider>
+        </body>
     </html>
   );
 }
