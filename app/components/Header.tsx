@@ -14,7 +14,7 @@ export function Header() {
                 <div className="flex flex-col px-5">
                     <h2 className="flex flex-col text-4xl lg:text-7xl gap-y-10 xl:gap-y-25 font-bold mt-5">
                         <span>{t('hero.tagline')}</span>
-                        <span className="font-exo text-4xl md:text-7xl xl:text-9xl max-w-2xl xl:max-w-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#01fb37] to-[#001affaa] relative inline-block 
+                        <span className="font-exo text-6xl md:text-7xl xl:text-9xl max-w-2xl xl:max-w-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#01fb37] to-[#001affaa] relative inline-block 
                         bg-[length:200%_200%] animate-[gradient-move_5s_infinite]">
                             {t('hero.mainText')}
                         </span>
