@@ -14,7 +14,7 @@ export function LanguageSwitcher() {
   };
 
   return (
-    <div className="relative w-[50px] h-[50px]">
+    <div className="relative w-[40px] h-[40px]">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full h-full flex items-center justify-center text-white rounded-t-[4px] border-0 relative bg-linear-30 from-[#2E7A] to-[#2E727A]"
@@ -31,7 +31,7 @@ export function LanguageSwitcher() {
       </span>
 
       {isOpen && (
-        <div className="absolute top-full left-0 w-[50px] bg-black/10 rounded-b-[4px] overflow-hidden z-20">
+        <div className="absolute top-full left-0 w-[40px] bg-black/10 rounded-b-[4px] overflow-hidden z-20">
           {(["en", "ru", "de"] as SupportedLanguages[]).map((lang) => (
             <button
               key={lang}
