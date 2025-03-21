@@ -16,7 +16,6 @@ export function Invest() {
       >
         {t('invest.mainTitle')}
         <span className="text-green-500">
-          {" "}
           {t('invest.highlight')}
         </span>
         {t('invest.subtitle')}
@@ -31,7 +30,7 @@ export function Invest() {
             className="mx-auto"
           />
         </div>
-        <div className="flex-1 grid grid-cols-2 px-3 gap-4">
+        <div className="flex-1 text-xs sm:text-sm lg:text-xl grid grid-cols-2 px-3 gap-4">
           <div className="flex flex-col gap-y-3 text-left bg-gray-800 p-4 rounded-2xl">
             <Image
               src="/icons/calender.png"
@@ -157,14 +156,14 @@ export function Invest() {
       </div>
       <div className="flex justify-center items-center w-full py-20 bg-[url(/bgInvest.png)] bg-no-repeat bg-left-top border-1 border-gray-500 rounded-2xl shadow-xl shadow-green-500/20 mb-20">
         <div className="flex flex-wrap w-full gap-30 p-12">
-          <div className="flex flex-1 flex-col text-4xl py-3 gap-y-10">
+          <div className="flex flex-1 flex-col text-3xl xl:text-4xl py-3 gap-y-10">
             <span>{t('invest.join.title')}</span>
             <span className="text-2xl font-exo">
               {t('invest.join.subtitle')}
             </span>
           </div>
           <div className="flex-1">
-            <ul className="flex flex-col gap-y-5 text-3xl [&_span]:text-green-500 [&_span]:text-xl">
+            <ul className="flex flex-col gap-y-5 text-xl lg:text-2xl xl:text-4xl [&_span]:text-green-500 [&_span]:text-xl">
               <li>
                 <span>01 </span>{t('invest.join.steps.first')}
               </li>

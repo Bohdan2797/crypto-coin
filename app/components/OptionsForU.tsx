@@ -31,8 +31,8 @@ export function OptionsForU() {
             <span className="text-sm font-bold">/ {t('options.slider.first.total')}</span>
           </div>
           <div className="pl-4 border-l-2 border-[#4B5265] ml-5 space-y-23">
-            <h2 className="text-4xl">{t('options.slider.first.title')}</h2>
-            <span className="text-2xl pr-3">
+            <h2 className="text-xl xl:text-3xl">{t('options.slider.first.title')}</h2>
+            <span className="text-xl xl:text-2xl pr-3">
               {t('options.slider.first.description')}
             </span>
           </div>
@@ -46,8 +46,8 @@ export function OptionsForU() {
             <span className="text-sm font-bold">/ {t('options.slider.second.total')}</span>
           </div>
           <div className="pl-4 border-l-1 ml-5 space-y-23">
-            <h2 className="text-3xl">{t('options.slider.second.title')}</h2>
-            <span className="text-2xl text-[#fff1ff]">
+            <h2 className="text-xl px-3 xl:text-3xl">{t('options.slider.second.title')}</h2>
+            <span className="text-xl xl:text-2xl text-[#fff1ff]">
               {t('options.slider.second.description')}
             </span>
           </div>

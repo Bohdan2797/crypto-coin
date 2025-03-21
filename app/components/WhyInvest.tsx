@@ -30,7 +30,7 @@ export function WhyInvest() {
             </span>
           </div>
 
-          <div className="flex-2 p-4 grid grid-cols-2 grid-rows-2 gap-10">
+          <div className="flex-2 p-4 text-xs md:text-lg lg:text-xl grid grid-cols-2 grid-rows-2 gap-10">
             <div className="[&_img]:mb-3">
               <img
                 src="/icons/Btc.png"

@@ -37,7 +37,7 @@ export function Payment() {
                     </div>
                 </div>
                 <div className="flex relative justify-center items-center w-full py-20">
-                    <div className="flex flex-wrap  w-full gap-30 p-12 ">
+                    <div className="flex flex-col xl:flex-row  w-full gap-30 p-12 ">
                         <div className="flex-1 font-exo text-2xl lg:text-4xl text-left">
                             <h2 className="font-semibold px-5 lg:px-0"
                                 style={{
@@ -107,7 +107,7 @@ export function Payment() {
                         >{t('payment.security.title')}</h2>
                     </div>
 
-                    <div className="flex-[2]">
+                    <div className="flex-[2] text-xs ">
                         <div className="flex border-b border-gray-500 py-4">
                             <span className="text-green-500 w-48 flex-shrink-0">{t('payment.security.features.monitoring.title')}</span>
                             <span>{t('payment.security.features.monitoring.description')}</span>

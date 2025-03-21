@@ -11,7 +11,7 @@ export function Footer() {
             <div className="flex flex-col lg:flex-row justify-between gap-10">
                 {/* Левый блок: Логотип и название */}
                 <div className="flex items-center gap-3">
-                    <Image src='/logo2.png' alt='logo BaseCore' width={200} height={200} />
+                    <Image src='/logo2.png' alt='logo BaseCore' width={150} height={200} />
                     <h2 className="text-2xl pb-8 sm:text-3xl font-bold">BaseCore</h2>
                 </div>
 

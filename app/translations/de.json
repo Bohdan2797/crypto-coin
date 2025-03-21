@@ -2,7 +2,7 @@
   "nav": {
     "home": "STARTSEITE",
     "staking": "STAKING",
-    "ecoFriendlyMining": "UMWELTFREUNDLICHES MINING",
+    "ecoFriendlyMining": "ECO-FRIENDLY MINING",
     "howToBuy": "WIE KAUFEN",
     "aboutBCE": "ÜBER BCE",
     "buyBce": "BCE KAUFEN"
@@ -178,7 +178,7 @@
   },
   "invest": {
     "mainTitle": "Der kostengünstigste Weg mit einer Einstiegsschwelle von nur 0.001 BCE ist",
-    "highlight": "in eine Sofort-Masternode zu investieren",
+    "highlight": " in eine Sofort-Masternode zu investieren",
     "subtitle": ", die an der Netzwerk-Blockvalidierung teilnimmt.",
     "features": {
       "daily": "Belohnungen für die Generierung neuer Blöcke werden täglich gutgeschrieben",
