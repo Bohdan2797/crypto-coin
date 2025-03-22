@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Links } from "../data/navLinks";
 import { useState } from "react";
-import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useTranslation } from "../hooks/useTranslation";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,7 +57,7 @@ export function Navbar() {
               {t('nav.buyBce')}
             </Link>
             <div className="mt-4">
-              <LanguageSwitcher />
+              <LanguageSwitcher/>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden xl:block">
-          <LanguageSwitcher />
+          <LanguageSwitcher/>
         </div>
 
         <Link href="#" className="hidden xl:block bg-linear-30 from-[#2E727A] to-[#2E7A] py-3 px-5 rounded-2xl transform hover:bg-linear-30 hover:from-[#2E7A] hover:to-[#2E727A] duration-300 transition-colors"> 

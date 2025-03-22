@@ -7,7 +7,7 @@ import de from '../translations/de.json';
 const translations: Record<SupportedLanguages, TranslationType> = {
   en,
   ru,
-  de
+  de,
 };
 
 export function useTranslation() {
@@ -15,14 +15,17 @@ export function useTranslation() {
 
   const t = (key: string): string => {
     const keys = key.split('.');
-    let value: any = translations[language];
-    
+    let value: unknown = translations[language];
+
     for (const k of keys) {
-      value = value?.[k];
-      if (value === undefined) return key;
+      if (typeof value === 'object' && value !== null) {
+        value = (value as Record<string, unknown>)[k];
+      } else {
+        return key;
+      }
     }
-    
-    return value;
+
+    return typeof value === 'string' ? value : key;
   };
 
   return { t };

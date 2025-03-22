@@ -18,7 +18,6 @@ export function LanguageSwitcher() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full h-full flex items-center justify-center text-white rounded-t-[4px] border-0 relative bg-linear-30 from-[#2E7A] to-[#2E727A]"
-        
       >
         {language.toUpperCase()}
       </button>
