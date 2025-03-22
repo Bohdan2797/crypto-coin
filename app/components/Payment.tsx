@@ -107,7 +107,7 @@ export function Payment() {
                         >{t('payment.security.title')}</h2>
                     </div>
 
-                    <div className="flex-[2] text-xs ">
+                    <div className="flex-[2] text-[10px] xl:text-sm ">
                         <div className="flex border-b border-gray-500 py-4">
                             <span className="text-green-500 w-48 flex-shrink-0">{t('payment.security.features.monitoring.title')}</span>
                             <span>{t('payment.security.features.monitoring.description')}</span>
