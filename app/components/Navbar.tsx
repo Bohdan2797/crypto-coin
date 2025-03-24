@@ -1,18 +1,18 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import { Links } from "../data/navLinks";
+import { Links, routeMap } from "../data/navLinks"; // Импортируем routeMap
 import { useState } from "react";
 import { useTranslation } from "../hooks/useTranslation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { usePathname } from "next/navigation"; // Добавляем для подсветки активной ссылки
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useTranslation();
+  const pathname = usePathname(); // Получаем текущий путь
 
-  // Функция для преобразования ключа в формат для перевода
   const getTranslationKey = (link: string) => {
-    // Преобразуем первую букву в нижний регистр и добавляем остальные буквы как есть
     return link.charAt(0).toLowerCase() + link.slice(1);
   };
 
@@ -39,11 +39,13 @@ export function Navbar() {
         {/* Мобильное меню */}
         <div className={`fixed inset-0 bg-black/90 backdrop-blur-lg z-40 transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} xl:hidden`}>
           <div className="flex flex-col items-center justify-center h-full gap-8">
-            {Links.map((link, index) => (
+          {Links.map((link, index) => (
               <Link 
                 key={index} 
-                href="#" 
-                className="text-xl font-semibold hover:text-[#2E7A] transition-colors"
+                href={routeMap[link]} // Используем routeMap для ссылок
+                className={`text-xl font-semibold transition-colors ${
+                  pathname === routeMap[link] ? 'hover:text-[#2E7A]' : 'hover:text-[#2E7A]'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t(`nav.${getTranslationKey(link)}`)}
@@ -65,8 +67,20 @@ export function Navbar() {
         {/* Десктопное меню */}
         <ul className="hidden xl:flex gap-x-4 uppercase bg-[#838AA0]/10 backdrop-blur-md rounded-2xl py-3 px-4">
           {Links.map((link, index) => (
-            <li key={index} className="px-3 py-2 border-1 border-transparent hover:border-[#2E7A] transform-border transition-colors duration-500 rounded-2xl"> 
-              <Link href="#">{t(`nav.${getTranslationKey(link)}`)}</Link>
+            <li 
+              key={index} 
+              className={`px-3 py-2 border-1 rounded-2xl transition-colors duration-500 ${
+                pathname === routeMap[link] 
+                  ? "border-transparent hover:border-[#2E7A]" // активный стиль
+                  : "border-transparent hover:border-[#2E7A]" // обычный стиль
+              }`}
+            >
+              <Link 
+                href={routeMap[link]}
+                className="block w-full h-full"
+              >
+                {t(`nav.${getTranslationKey(link)}`)}
+              </Link>
             </li>
           ))}
         </ul>
