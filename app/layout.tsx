@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { LanguageProvider } from "./context/LanguageContext";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -75,7 +77,12 @@ export default function RootLayout({
     <html lang="en">
       <body
       >
-        <LanguageProvider>{children}</LanguageProvider>
+
+        <LanguageProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

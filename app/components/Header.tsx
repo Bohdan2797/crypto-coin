@@ -9,8 +9,7 @@ export function Header() {
     
     return (
         <section className="bg-[url(/bg1.png)] bg-no-repeat bg-center bg-cover w-full  flex flex-col">
-            <Navbar />
-            <div className="w-full max-w-screen-2xl flex justify-between items-center mx-auto  flex-grow">
+            <div className="w-full max-w-screen-2xl pt-30 flex justify-between items-center mx-auto  flex-grow">
                 <div className="flex flex-col px-5">
                     <h2 className="flex flex-col text-4xl lg:text-7xl gap-y-10 xl:gap-y-25 font-bold mt-5">
                         <span>{t('hero.tagline')}</span>
