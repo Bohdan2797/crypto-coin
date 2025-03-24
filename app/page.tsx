@@ -19,7 +19,6 @@ export default function Home() {
     <WhyInvest/>
     <Device/>
     <Payment/>
-    {/* <Footer/> */}
     </div>
   )
 }
