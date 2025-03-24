@@ -8,9 +8,9 @@ export default function NotFound() {
   return (
     <div className="min-h-screen bg-[url('/bgHeader.png')] bg-cover bg-center flex flex-col items-center justify-center bg-black text-white">
       <div className="text-center space-y-6">
-        <h1 className="text-9xl font-bold text-[#2E7A]">404</h1>
+        <h1 className="text-9xl font-bold text-[#22ee77dd]">404</h1>
         <h2 className="text-2xl font-semibold">{t('notFound.title')}</h2>
-        <p className="text-gray-400 max-w-md mx-auto">
+        <p className="text-gray-200 max-w-md mx-auto">
           {t('notFound.description')}
         </p>
         <Link 
